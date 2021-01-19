@@ -2,10 +2,12 @@ load("//:plugin.bzl", "proto_plugin")
 
 proto_plugin(
     name = "protobuf_ts_plugin",
-    # options = [
-    #     "long_type_string",
-    #     "optimize_code_size",
-    # ],
+    options = [
+        "long_type_string",
+        "client_promise",
+        "optimize_code_size",
+        "server_none",
+    ],
     outputs = [
         "{protopath}.ts",
     ],
