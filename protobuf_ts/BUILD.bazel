@@ -8,9 +8,10 @@ proto_plugin(
         "optimize_code_size",
         "server_none",
     ],
-    outputs = [
-        "{protopath}.ts",
-    ],
+    output_directory = True,
+#     outputs = [
+#         "{protopath}.ts",
+#     ],
     tool = "@npm//@protobuf-ts/plugin/bin:protoc-gen-ts",
     visibility = ["//visibility:public"],
 )
