@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "private": true,
+  "dependencies": {
+    "@bazel/typescript": "2.2.0",
+    "@octokit/core": "^3.0.0",
+    "@protobuf-ts/plugin": "^1.0.12"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "license": "(Apache-2.0 AND BSD-3-Clause)"
+}

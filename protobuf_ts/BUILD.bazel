@@ -1,0 +1,14 @@
+load("//:plugin.bzl", "proto_plugin")
+
+proto_plugin(
+    name = "protobuf_ts_plugin",
+    # options = [
+    #     "long_type_string",
+    #     "optimize_code_size",
+    # ],
+    outputs = [
+        "{protopath}.ts",
+    ],
+    tool = "@npm//@protobuf-ts/plugin/bin:protoc-gen-ts",
+    visibility = ["//visibility:public"],
+)
